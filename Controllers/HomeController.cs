@@ -37,5 +37,13 @@ namespace FriendLetter.Controllers
                 myLetterVariable.SetSouv(Request.Query["souv"]);
                 return View("Hello", myLetterVariable);
             }
+
+        [Produces("text/html")]
+        [Route("/favorite_photos")]
+            public ActionResult FavoritePhotos()
+        {
+            return View();
+        }
+
     }
 }
